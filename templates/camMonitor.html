@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Cam Monitor</title>
+    <style>
+        .wrap-element {
+            position: relative;
+            overflow: hidden;
+            padding-top: 5%;
+            }
+
+        .wrapped-iframe {
+            position: absolute:
+            top: 0;
+            left: 0;
+            width: 800px;
+            height: 600px;
+            border: 0;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="wrap-element">
+                    <iframe class="wrapped-iframe" id="camera1" src="http://192.168.1.30:8080/video" allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div  class="wrap-element">
+                    <iframe class="wrapped-iframe" id="camera2" src="http://192.168.1.14:8080/video" width="350" height="550" ></iframe>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://192.168.1.30:8080/video">Camera 1 Full Screen</a></td>
+            <td><a href="http://192.168.1.14:8080/video">Camera 2 Full Screen</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="wrap-element">
+                    <iframe class="wrapped-iframe" id="camera3" src="http://192.168.1.5:8080/video" allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div  class="wrap-element">
+                    <iframe class="wrapped-iframe" id="camera4" src="http://192.168.1.14:8080/video" width="350" height="550" ></iframe>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://192.168.1.5:8080/video">Camera 3 Full Screen</a></td>
+            <td><a href="http://192.168.1.14:8080/video">Camera 4 Full Screen</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
